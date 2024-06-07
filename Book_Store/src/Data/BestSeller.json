@@ -1,0 +1,30 @@
+[
+    {
+        "BookName": "Bear's Magic",
+        "Author": "K.L. King",
+        "ratings": "4.5",
+        "price": "80DH",
+        "image": "https://res.cloudinary.com/dfin3vmgz/image/upload/v1717699612/Bear_Magic_hty4jt.jpg"
+    },
+    {
+        "BookName": "The 48 Laws of Power",
+        "Author": "Robert Greene",
+        "ratings": "4.0",
+        "price": "80DH",
+        "image": "https://res.cloudinary.com/dfin3vmgz/image/upload/v1717699612/power_efh1u4.jpg"
+    },
+    {
+        "BookName": "Rich Dad Poor Dad",
+        "Author": "Robert Kiyosaki",
+        "ratings": "4.5",
+        "price": "80DH",
+        "image": "https://res.cloudinary.com/dfin3vmgz/image/upload/v1717699612/rich-dad-poor-dad_vawjdu.webp"
+    },
+    {
+        "BookName": "What Happened to You?",
+        "Author": "Bruce D. Perry",
+        "ratings": "4.5",
+        "price": "80DH",
+        "image": "https://res.cloudinary.com/dfin3vmgz/image/upload/v1717699612/What_aulu8p.webp"
+    }
+]
