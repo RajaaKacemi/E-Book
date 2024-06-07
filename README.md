@@ -36,7 +36,7 @@ Le projet est divisé en deux parties principales :
 ### Configuration du Backend
 1. Clonez le dépôt :
    git clone https://github.com/RajaaKacemi/E-Book.git
-   \\cd E-Book/BackEnd
+    \\ cd E-Book/BackEnd
 2. Créez un environnement virtuel et activez-le :
    python -m venv env
    source env/bin/activate
@@ -53,7 +53,7 @@ Le projet est divisé en deux parties principales :
    MYSQL_PORT=3306
 5. Appliquez les migrations:
    python manage.py migrate
-6.Lancez le serveur de développement:
+   6.Lancez le serveur de développement:
    python manage.py runserver
 
 ### Configuration du Frontend
