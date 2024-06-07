@@ -34,6 +34,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://book-book-store.vercel.app"
 ]
 
 ROOT_URLCONF = 'backend.urls'
