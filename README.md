@@ -43,7 +43,7 @@ Le projet est divisé en deux parties principales :
 3. Installez les dépendances :
    pip install -r requirements.txt
 4. Configurez les variables d'environnement dans .env :
-   SECRET_KEY=your-secret-key
+   SECRET_KEY=secret-key
    DEBUG=True
    ALLOWED_HOSTS=127.0.0.1,book-book-store.vercel.app
    MYSQL_DATABASE=e-library
