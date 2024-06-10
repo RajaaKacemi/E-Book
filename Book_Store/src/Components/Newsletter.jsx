@@ -28,32 +28,31 @@ function Newsletter() {
 
   function onSubmit(e) {
     e.preventDefault();
-    
 
-    if (!email ) {
-        setError("Email is required.");
-        return;
+    if (!email) {
+      setError("Email is required.");
+      return;
     }
 
-    fetch("https://formcarry.com/s/_TLKKWOVu-", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
-        },
-        body: JSON.stringify({ email: email})
+    fetch("http://127.0.0.1:8000/accounts/SubscriberNewsletter/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify({ email: email })
     })
     .then((res) => res.json())
     .then((res) => {
-        if (res.code === 200) {
-            setSubmitted(true);
-        } else {
-            setError(res.message);
-        }
+      if (res.message === 'Email saved successfully') {
+        setSubmitted(true);
+      } else {
+        setError(res.error);
+        print("hi")
+      }
     })
-    .catch((error) => setError(error));
-}
-
+    .catch((error) => setError(error.message));
+  }
 
   if (submitted) {
     notifySuccess();
