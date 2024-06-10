@@ -43,7 +43,7 @@ Le projet est divisé en deux parties principales :
 3. Installez les dépendances :
    pip install -r requirements.txt
 4. Configurez les variables d'environnement dans .env :
-   SECRET_KEY=your-secret-key
+   SECRET_KEY=secret-key
    DEBUG=True
    ALLOWED_HOSTS=127.0.0.1,book-book-store.vercel.app
    MYSQL_DATABASE=e-library
@@ -62,6 +62,11 @@ Le projet est divisé en deux parties principales :
   npm install
 3.Lancez le serveur de développement:
   npm start
+  
+### Fonctionnalités
+1. Inscription et Connexion : Les fonctionnalités d'inscription et de connexion fonctionnent correctement.
+2. Formulaire de Souscription : Les utilisateurs peuvent s'abonner à la newsletter.
+3. Formulaire de Contact : Le formulaire de contact permet aux utilisateurs d'envoyer des messages.
 
 ### Déploiement
 Assurez-vous que les variables d'environnement sont correctement définies dans Vercel pour le frontend et dans votre service de déploiement pour le backend.
