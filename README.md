@@ -1,4 +1,5 @@
 # E-Book
+E-Book est un projet React, développé comme défi pour une candidature à un emploi en moins de 48 heures.
 
 ## Description
 Ce projet est une bibliothèque en ligne moderne et intuitive, conçue pour offrir une expérience utilisateur immersive. Le design utilise des couleurs chaleureuses et des images de livres pour rappeler l'ambiance d'une bibliothèque traditionnelle.
