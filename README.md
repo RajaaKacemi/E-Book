@@ -14,7 +14,7 @@ The Book Information Platform is a web application that allows users to browse a
 - **Frontend**: React.js, Tailwind CSS
 - **Backend**: Django
 - **Database**: MySQL
-- **API**: Open Library API (for fetching book data)
+- **API**: Open Library API "http://openlibrary.org/search.json?title="
 
 ## Installation
 To set up the project locally, follow these steps:
