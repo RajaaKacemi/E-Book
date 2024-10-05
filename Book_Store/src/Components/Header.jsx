@@ -25,16 +25,15 @@ function Header() {
         </div>
       </div>
       <div className="hidden sm:flex text-lg font-inknut">
-        <Link to="/home" className="font-serif">Book Store</Link>
+        <Link to="/home" className="font-serif">Book Info</Link>
       </div>
       <div className={`fixed top-16 left-0 w-full sm:text-center py-4 sm:py-0 bg-orange sm:bg-beige p-4 flex flex-col items-center space-y-6 sm:space-y-0 sm:flex-row sm:flex-1 sm:static sm:justify-center sm:space-x-6 ${isOpen ? 'block' : 'hidden'} sm:block z-30`}>
         <Link onClick={closeMenu} to="/home">Home</Link>
-        <Link onClick={closeMenu} to="/home">Shop</Link>
-        <Link onClick={closeMenu} to="/home">About Us</Link>
+        <Link onClick={closeMenu} to="/books">Books</Link>
+        <Link onClick={closeMenu} to='/contactUs'>Contact us</Link>
       </div>
       <div className="flex items-center space-x-4 sm:space-x-6">
-        <i className="far fa-heart"></i>
-        <i className="fas fa-shopping-cart"></i>
+        
         <Link to="/signup">
           <button className="bg-yellow text-sm sm:text-base px-2 py-1 sm:px-4 sm:py-2 rounded-lg hover:bg-Brown ease-in duration-300">
             Sign Up

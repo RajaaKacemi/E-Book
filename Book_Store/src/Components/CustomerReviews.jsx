@@ -39,7 +39,7 @@ const renderStars = (rating) => {
 function CustomerReviews() {
   return (
     <section className="text-center py-10 px-4 bg-Brown sm:py-20 sm:px-10">
-      <h1 className="text-3xl sm:text-4xl font-bold text-beige mb-6">What our customers say about us</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-beige mb-6">What our users say about us</h1>
       <div className="bg-beige rounded-lg p-4 sm:p-6">
         {reviews.map((review, index) => (
           <div key={index} className="flex flex-col lg:flex-row items-center justify-between mb-4 py-4 px-4 sm:px-6 lg:px-10 rounded-lg">

@@ -70,7 +70,7 @@ const notifySuccess = () => {
 
 
   return (
-    <div className="isolate bg-beige px-6 py-10 sm:py-24 lg:px-8">
+    <div className="isolate bg-beige px-6 py-10 sm:py-24 lg:px-8" id="contactUs">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-Brown sm:text-4xl">Contact Us</h2>
       </div>
