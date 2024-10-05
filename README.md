@@ -12,8 +12,8 @@ The Book Information Platform is a web application that allows users to browse a
 
 ## Technologies Used
 - **Frontend**: React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (or your chosen database)
+- **Backend**: Django
+- **Database**: MySQL
 - **API**: Open Library API (for fetching book data)
 
 ## Installation
@@ -21,4 +21,4 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/book-information-platform.git
+   git clone https://github.com/RajaaKacemi/book-information-platform.git
