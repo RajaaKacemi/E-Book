@@ -6,8 +6,6 @@ The Book Information Platform is a web application that allows users to browse a
 ## Features
 - **Browse Books**: Users can explore a diverse collection of books categorized by genres.
 - **Book Details**: Each book page contains detailed descriptions, author information, and publication details.
-- **User Reviews**: Users can read and submit reviews for books, providing insights and feedback for others.
-- **Ratings**: Users can rate books on a scale, helping to highlight popular titles.
 - **Responsive Design**: The platform is designed to be fully responsive, ensuring a seamless experience on both desktop and mobile devices.
 
 ## Technologies Used
