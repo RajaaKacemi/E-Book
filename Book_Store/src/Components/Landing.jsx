@@ -7,10 +7,10 @@ function Landing() {
   return (
     <section className="flex flex-col h-screen lg:flex-row text-center p-6 sm:py-6 sm:pl-6 sm:pr-0 lg:pr-0 overflow-hidden bg-beige">
       <div className="text-start p-6 w-full lg:w-2/4">
-      <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4" style={{ lineHeight: '1.5' }}>
+      <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 text-Brown" style={{ lineHeight: '1.5' }}>
           Find Your Next Book
         </h1>
-        <p className=" text-lg sm:text-2xl lg:text-3xl mb-8 ">
+        <p className=" text-lg sm:text-2xl lg:text-3xl mb-8 text-black">
           Looking for free digital books? Look no further than Book Info!
         </p>
         <button className="bg-Brown text-white px-8 py-4 sm:px-12 sm:py-5 font-semibold rounded-lg hover:bg-yellow ease-in duration-300" onClick={()=>{navigate("/books");}}>
