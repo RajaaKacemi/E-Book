@@ -1,15 +1,16 @@
 import { useGlobalContext } from '../context';
 import { Link } from 'react-router-dom';
+import cover_img from "../assets/images/cover_not_found.jpg";
 
 const BookList = () => {
     const { books, loading, resultTitle } = useGlobalContext();
 
-    // Display loading message while data is being fetched
+    
     if (loading) {
         return <h2>Loading...</h2>;
     }
 
-    // Display message when no books are available
+    
     if (!books || books.length === 0) {
         return <h2>No books available</h2>;
     }
@@ -17,9 +18,9 @@ const BookList = () => {
     return (
         <div>
             <h1 className='text-2xl font-bold mb-4 p-3'>{resultTitle}:</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 h-screen p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
                 {books.map((book) => {
-                    // Sanitize the book ID to remove `/works/` part
+                    
                     const bookId = book.id.split('/').pop();
                     const coverImg = book.cover_id
                         ? `https://covers.openlibrary.org/b/id/${book.cover_id}-L.jpg`
@@ -28,13 +29,14 @@ const BookList = () => {
                     return (
                         <Link 
                             to={`/book/${bookId}`} 
-                            key={bookId} // Use bookId as the key for better uniqueness
+                            key={bookId} 
                             className="block bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                         >
                             <div className="text-center">
                                 <div className='book-item-img'>
                                     <img 
-                                        src={coverImg} 
+                                         
+                                        src={coverImg ? coverImg : cover_img} 
                                         alt="Book cover" 
                                         onError={(e) => { 
                                             e.target.onerror = null; 

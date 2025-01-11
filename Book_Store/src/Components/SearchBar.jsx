@@ -1,11 +1,11 @@
 import React, {useRef} from 'react';
 import {FaSearch} from "react-icons/fa";
-import { useGlobalContext } from '../context.jsx';  // Import the context hook
+import { useGlobalContext } from '../context.jsx';
 import { useNavigate } from 'react-router-dom';
 
 const SearchBar = () => {
   const navigate = useNavigate();
-  const {setSearchTerm} = useGlobalContext();  // Get the setSearchTerm function from context
+  const {setSearchTerm} = useGlobalContext();
   const searchText = useRef('');
 
   const handleSubmit = (e) => {
@@ -13,9 +13,9 @@ const SearchBar = () => {
     let tempSearchTerm = searchText.current.value.trim();
 
     if ((tempSearchTerm.replace(/[^\w\s]/gi, "")).length === 0) {
-      setSearchTerm("the lost world");  // Default search term if the input is empty
+      setSearchTerm("the lost world");
     } else {
-      setSearchTerm(tempSearchTerm);  // Set the entered search term in the context
+      setSearchTerm(tempSearchTerm); 
     }
     navigate("/books");
   };
@@ -28,7 +28,7 @@ const SearchBar = () => {
             <div className="search-form-elem flex justify-center items-center">
               <input
                 type="text"
-                ref={searchText}  // Reference to the input
+                ref={searchText}
                 className="form-control w-full sm:w-96 p-3 rounded-l-lg border border-gray-300 focus:outline-none focus:border-purple-500"
                 placeholder="Book name"
               />
